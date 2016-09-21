@@ -11,7 +11,7 @@ docker build -t senbong/lasagne:base -f lasagne/Dockerfile lasagne
 docker build -t senbong/tensorflow:base -f tensorflow/Dockerfile tensorflow
 ```
 
-To run the image:
+To create a container and run it:
 
 ```
 nvidia-docker run --rm -it --volume <host-workspace>:/root/Workspace senbong/<image-name>:base /bin/bash
